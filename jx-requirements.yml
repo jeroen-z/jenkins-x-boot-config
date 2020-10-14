@@ -1,10 +1,10 @@
 cluster:
-  clusterName: ""
-  environmentGitOwner: ""
+  clusterName: "gitops-alpha-1"
+  environmentGitOwner: "jeroen-z"
   environmentGitPublic: false
   project: ""
-  provider: gke
-  zone: ""
+  provider: do
+  zone: "ams3"
 gitops: true
 environments:
 - key: dev
@@ -21,13 +21,13 @@ kaniko: true
 secretStorage: local
 storage:
   logs:
-    enabled: false
+    enabled: true
     url: ""
   reports:
-    enabled: false
+    enabled: true
     url: ""
   repository:
-    enabled: false
+    enabled: true
     url: ""
 versionStream:
   ref: "master"
